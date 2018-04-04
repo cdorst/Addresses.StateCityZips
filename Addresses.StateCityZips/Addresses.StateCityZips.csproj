@@ -15,7 +15,7 @@
     <PackageLicenseUrl>https://github.com/cdorst/Addresses.StateCityZips/blob/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/cdorst/Addresses.StateCityZips</PackageProjectUrl>
     <RepositoryUrl>https://github.com/cdorst/Addresses.StateCityZips</RepositoryUrl>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
   </PropertyGroup>
 
   <ItemGroup>
