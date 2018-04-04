@@ -1,7 +1,7 @@
 // Copyright © Christopher Dorst. All rights reserved.
 // Licensed under the GNU General Public License, Version 3.0. See the LICENSE document in the repository root for license information.
 
-using Addresses.States;
+using Addresses.StateCities;
 using Addresses.ZipCodes;
 using DevOps.Code.Entities.Interfaces.StaticEntity;
 using Position = ProtoBuf.ProtoMemberAttribute;
@@ -22,19 +22,19 @@ namespace Addresses.StateCityZips
         {
         }
 
-        public StateCityZip(State stateCity, ZipCode zipPlusFour)
+        public StateCityZip(StateCity stateAndCity, ZipCode zipPlusFour)
         {
-            StateCity = stateCity;
+            StateAndCity = stateAndCity;
             ZipPlusFour = zipPlusFour;
         }
 
-        /// <summary>Contains StateCity reference</summary>
+        /// <summary>Contains StateAndCity reference</summary>
         [Position(3)]
-        public State StateCity { get; set; }
+        public StateCity StateAndCity { get; set; }
 
-        /// <summary>Contains StateCity foreign key</summary>
+        /// <summary>Contains StateAndCity foreign key</summary>
         [Position(2)]
-        public int StateCityId { get; set; }
+        public int StateAndCityId { get; set; }
 
         /// <summary>StateCityZip unique identifier (primary key)</summary>
         [Key]
@@ -56,6 +56,6 @@ namespace Addresses.StateCityZips
         public int GetKey() => StateCityZipId;
 
         /// <summary>Returns an expression defining this entity's unique index (alternate key)</summary>
-        public Expression<Func<StateCityZip, object>> GetUniqueIndex() => entity => new { entity.StateCityId, entity.ZipPlusFourId };
+        public Expression<Func<StateCityZip, object>> GetUniqueIndex() => entity => new { entity.StateAndCityId, entity.ZipPlusFourId };
     }
 }
