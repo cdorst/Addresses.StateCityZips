@@ -15,12 +15,12 @@
     <PackageLicenseUrl>https://github.com/cdorst/Addresses.StateCityZips/blob/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/cdorst/Addresses.StateCityZips</PackageProjectUrl>
     <RepositoryUrl>https://github.com/cdorst/Addresses.StateCityZips</RepositoryUrl>
-    <Version>1.0.4</Version>
+    <Version>1.0.5</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CDorst.DevOps.Code.Entities.Metapackages.Annotations" Version="1.0.1" />
-    <PackageReference Include="CDorst.DevOps.Code.Entities.Interfaces.StaticEntity" Version="1.0.6" />
+    <PackageReference Include="CDorst.DevOps.Code.Entities.Metapackages.Annotations" Version="1.0.2" />
+    <PackageReference Include="CDorst.DevOps.Code.Entities.Interfaces.StaticEntity" Version="1.0.7" />
   </ItemGroup>
 
 </Project>
